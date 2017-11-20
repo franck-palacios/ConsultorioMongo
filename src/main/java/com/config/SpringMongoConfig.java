@@ -19,7 +19,7 @@ public class SpringMongoConfig extends AbstractMongoConfiguration {
 
 	@Override
 	public String getDatabaseName() {
-		return "yourdb";//Nombre de la BD
+		return "consultorios";//Nombre de la BD
 	}
 
 	@Override

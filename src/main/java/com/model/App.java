@@ -35,7 +35,6 @@ public class App {
 		// Guardar
 		mongoOperation.save(new User("juan", "admin123"));
 
-		// now user object got the created id.
 		//System.out.println("1. user : " + user);
 
 		// Crea la consulta de busqueda
@@ -49,7 +48,6 @@ public class App {
 		mongoOperation.updateFirst(searchUserQuery, Update.update("password", "new password"),
 				User.class);
 
-		// find the updated user object
 		User updatedUser = mongoOperation.findOne(
 				new Query(Criteria.where("username").is("juan")), User.class);
 

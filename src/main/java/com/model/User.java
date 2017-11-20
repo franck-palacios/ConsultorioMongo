@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author Franck
  */
 
-@Document(collection = "users")
+@Document(collection = "users")//Nombre de la coleccion.
 public class User {
 
 	@Id

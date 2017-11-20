@@ -10,8 +10,10 @@
           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<mongo:mongo host="127.0.0.1" port="27017" />
-	<mongo:db-factory dbname="yourdb" />
-
+	<mongo:db-factory dbname="consultorios" />
+        
+        <!--Esta parte del codigo es para permitir utilizar clase central del soporte de MongoDB de 
+            Spring que proporciona un amplio conjunto de características para interactuar con la base de datos-->
 	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
 		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
 	</bean>
